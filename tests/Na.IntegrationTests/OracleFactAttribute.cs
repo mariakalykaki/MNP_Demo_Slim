@@ -10,7 +10,7 @@ public sealed class OracleFactAttribute : FactAttribute
     {
         if (string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable(EnvironmentVariable)))
         {
-            Skip = $"Set {EnvironmentVariable} to run against Oracle (see CLAUDE.md).";
+            Skip = $"Set {EnvironmentVariable} to run against Oracle (see README.md).";
         }
     }
 }
